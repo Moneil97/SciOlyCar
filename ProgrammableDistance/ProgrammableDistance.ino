@@ -18,19 +18,12 @@ void setup() {
 }
 void loop() {
   if (digitalRead(buttonPin) == HIGH){
-
     for(int x = 0; x < stepsPerRev * revs; x++) {
-    digitalWrite(stepPin,HIGH); 
-    delayMicroseconds(500); 
-    digitalWrite(stepPin,LOW); 
-    delayMicroseconds(500); 
-  }
-
-    
-    digitalWrite(stepPin,HIGH); 
-    delayMicroseconds(500); 
-    digitalWrite(stepPin,LOW); 
-    delayMicroseconds(500);
+      digitalWrite(stepPin,HIGH); 
+      delayMicroseconds(500); 
+      digitalWrite(stepPin,LOW); 
+      delayMicroseconds(500); 
+    }
   }
 }
 
